@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bgg"
+    tools:context=".Installation">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar"
+                android:layout_width="60dp"
+                android:layout_height="35dp" />
+
+          <ImageView
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:id="@+id/imageView"
+              android:src="@drawable/softwaredown"
+              android:layout_marginTop="9dp"
+              android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Title"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Description"
+              android:id="@+id/description"
+              android:textSize="18sp"
+              android:textColor="#a9a9a9"
+              android:layout_below="@+id/title"
+              android:layout_marginTop="5dp"
+              android:layout_marginBottom="15dp"
+              />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Docker on Windows"
+                android:fontFamily="serif-monospace"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="bold"
+                android:textSize="18dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="☞  we will be installing Docker Desktop for Windows 10."
+                android:textColor="@color/white"
+                android:textSize="13dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What we need ?"
+                android:fontFamily="serif-monospace"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="bold"
+                android:textSize="18dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="@string/descrip"
+                android:textColor="@color/white"
+                android:textSize="13dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How we Install ?"
+                android:fontFamily="serif-monospace"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="bold"
+                android:textSize="18dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="@string/installe"
+                android:textColor="@color/white"
+                android:textSize="13dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="300dp"
+                android:layout_height="277dp"
+                android:layout_gravity="center"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="Launch from here"
+                android:textColor="@color/grey"
+                android:textSize="10dp"
+                android:layout_gravity="center">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/launch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="Click on the Whale"
+                android:textColor="@color/grey"
+                android:textSize="10dp"
+                android:layout_gravity="center">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_gravity="center" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/exec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="serif"
+                android:text="Get Started"
+                android:textColor="@color/grey"
+                android:textSize="10dp"
+                android:layout_gravity="center">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/white" />
+
+                        <!--Mac-->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textM1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:text="\n\nDocker on Mac OS"
+                android:textColor="#FFC107"
+                android:textSize="18dp"
+                android:textStyle="bold">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textM2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="☞  we will be installing Docker Desktop for Mac OS."
+                android:textColor="@color/white"
+                android:textSize="13dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textm3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:text="What we need ?"
+                android:textColor="#FFC107"
+                android:textSize="18dp"
+                android:textStyle="bold">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textm4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="@string/descripM"
+                android:textColor="@color/white"
+                android:textSize="13dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textm5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:text="How we Install ?"
+                android:textColor="#FFC107"
+                android:textSize="18dp"
+                android:textStyle="bold">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textm6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="@string/installeM"
+                android:textColor="@color/white"
+                android:textSize="13dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <ImageView
+                android:id="@+id/imagem"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_gravity="center" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textm7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="Drag and drop"
+                android:textColor="@color/grey"
+                android:textSize="10dp"
+                android:layout_gravity="center">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <ImageView
+                android:id="@+id/imagem2"
+                android:layout_width="wrap_content"
+                android:layout_height="145dp"
+                android:layout_gravity="center" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/launchM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="Double click to start Docker"
+                android:textColor="@color/grey"
+                android:textSize="10dp"
+                android:layout_gravity="center">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <ImageView
+                android:id="@+id/imagem3"
+                android:layout_width="wrap_content"
+                android:layout_height="220dp"
+                android:layout_gravity="center" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/execM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="Get Started"
+                android:textColor="@color/grey"
+                android:textSize="10dp"
+                android:layout_gravity="center">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_gravity="center"/>
+
+                        <!--Ubuntu-->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textU1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:text="\n\nDocker Engine on Ubuntu"
+                android:textColor="@color/sky"
+                android:textSize="18dp"
+                android:textStyle="bold">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textU2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="☞  we will be installing Docker Engine on Linux (Ubntu)."
+                android:textColor="@color/white"
+                android:textSize="13dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textU3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:text="What we need ?"
+                android:textColor="@color/sky"
+                android:textSize="18dp"
+                android:textStyle="bold">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textU4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="@string/descripU"
+                android:textColor="@color/white"
+                android:textSize="13dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textU5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:text="Quick Notes before Installing"
+                android:textColor="@color/sky"
+                android:textSize="18dp"
+                android:textStyle="bold">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textU6x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="@string/installex"
+                android:textColor="@color/white"
+                android:textSize="13dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textU6y"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="@string/installpart"
+                android:textColor="@color/white"
+                android:textSize="13dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+            <ImageView
+                android:id="@+id/imageU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textU7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="Uninstall old versions"
+                android:textColor="@color/sky"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:layout_gravity="center">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <ImageView
+                android:id="@+id/imageU2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/launchU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="Update the Repository"
+                android:textColor="@color/sky"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:layout_gravity="center">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <ImageView
+                android:id="@+id/imageU3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/execU3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="Add Docker’s official GPG key"
+                android:textColor="@color/sky"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:layout_gravity="center">
+            </androidx.appcompat.widget.AppCompatTextView>
+            <ImageView
+                android:id="@+id/imageU4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/execU4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="Verify the key with the fingerprint"
+                android:textColor="@color/sky"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:layout_gravity="center">
+            </androidx.appcompat.widget.AppCompatTextView>
+            <ImageView
+                android:id="@+id/imageU5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/execU5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="ReUpdate Packages"
+                android:textColor="@color/sky"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:layout_gravity="center">
+            </androidx.appcompat.widget.AppCompatTextView>
+            <ImageView
+                android:id="@+id/imageU6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/execU6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="Install Docker Engine"
+                android:textColor="@color/sky"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:layout_gravity="center">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_gravity="center"/>
+
+          <androidx.appcompat.widget.AppCompatTextView
+              android:id="@+id/execU7"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_marginTop="10dp"
+              android:layout_marginBottom="15dp"
+              android:fontFamily="serif"
+              android:text="Important Note"
+              android:textColor="#C30E0E"
+              android:textSize="18sp"
+              android:textStyle="bold">
+          </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/execU8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="@string/noteI"
+                android:textColor="@color/grey"
+                android:textSize="10dp"
+                android:layout_gravity="center"
+                android:justificationMode="inter_word"
+                >
+            </androidx.appcompat.widget.AppCompatTextView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

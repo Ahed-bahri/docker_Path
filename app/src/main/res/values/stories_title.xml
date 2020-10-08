@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="stories_titles">
+        <item name="installation" type="id">Installation</item>
+        <item name="contImg" type="id">Containers And Images </item>
+        <item name="hubReg" type="id">Hub And Registry </item>
+        <item name="DockerFile" type="id">DockerFile</item>
+        <item name="TipsTricks" type="id">Tips And Tricks</item>
+        <item name="DockerTools" type="id">Docker Tools</item>
+    </string-array>
+</resources>

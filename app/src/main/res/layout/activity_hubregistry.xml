@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bgg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar"
+                android:layout_width="60dp"
+                android:layout_height="35dp" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/regs"
+                android:layout_marginTop="9dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Hub and Registry"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="25dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="❃ Docker Hub Definition"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/sky"
+                android:textStyle="bold"
+                android:textSize="18dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="@string/hubDef"
+                android:textColor="@color/white"
+                android:textSize="13dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <ImageView
+                android:id="@+id/imgHub"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="❂ Examples of use"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/sky"
+                android:textStyle="bold"
+                android:textSize="18dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$ docker pull mysql"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/gold"
+                android:textStyle="bold"
+                android:textSize="14dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="Pull Mysql image from a registry "
+                android:textColor="@color/white"
+                android:textSize="13dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$ docker tag myimage:1.0 myrepo/myimage:2.0"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/gold"
+                android:textStyle="bold"
+                android:textSize="14dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="Retag a local image with a new image name and tag"
+                android:textColor="@color/white"
+                android:textSize="13dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$ docker push myrepo/myimage:2.0"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/gold"
+                android:textStyle="bold"
+                android:textSize="14dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="Push an image to a registry "
+                android:textColor="@color/white"
+                android:textSize="13dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$ search mysql"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/gold"
+                android:textStyle="bold"
+                android:textSize="14dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="Search a MySQL image from public repository ( Docker Hub)"
+                android:textColor="@color/white"
+                android:textSize="13dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="❃ About Docker Private Registry"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/sky"
+                android:textStyle="bold"
+                android:textSize="15dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="@string/dockerPrivate"
+                android:textColor="@color/white"
+                android:textSize="13dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textVy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="❃ Docker Private Registry Advantages"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/sky"
+                android:textStyle="bold"
+                android:textSize="15dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textVx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="@string/privateAdvg"
+                android:textColor="@color/white"
+                android:textSize="13dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/execU7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="Docker Workflow"
+                android:textColor="#C30E0E"
+                android:textSize="18sp"
+                android:textStyle="bold">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <ImageView
+                android:id="@+id/imageXtra"
+                android:layout_width="280dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

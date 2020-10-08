@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "457164714955",
+    "firebase_url": "https://dockerpath.firebaseio.com",
+    "project_id": "dockerpath",
+    "storage_bucket": "dockerpath.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457164714955:android:391d94902e095a806b7c4e",
+        "android_client_info": {
+          "package_name": "com.example.dockerPath"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457164714955-f7jgluc3hg9e39gvn0rknc1ek424fc0a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dockerPath",
+            "certificate_hash": "608714260fbe414651ad7d0b7ebd75b5c56ea4a5"
+          }
+        },
+        {
+          "client_id": "457164714955-l0ekqdnmsiru68tlgjpuud6qudb608a4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRXzEeEbaX2PFmJ1O_wu6PCPesK9iuivM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "457164714955-l0ekqdnmsiru68tlgjpuud6qudb608a4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bgg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar"
+                android:layout_width="60dp"
+                android:layout_height="35dp" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/tipsround"
+                android:layout_marginTop="9dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Docker Tips and Tricks"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="25dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="❂ Enable to non-root users to run Docker Commands"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/sky"
+                android:textStyle="bold"
+                android:textSize="16dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$ groupadd docker"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/gold"
+                android:textStyle="bold"
+                android:textSize="14dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="Add the docker group if it dosen't exist."
+                android:textColor="@color/white"
+                android:textSize="13dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$ usermod -aG docker[username]"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/gold"
+                android:textStyle="bold"
+                android:textSize="14dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="Add your username to Docker group"
+                android:textColor="@color/white"
+                android:textSize="13dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$ service docker restart"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/gold"
+                android:textStyle="bold"
+                android:textSize="14dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:text="Restart the Docker daemon"
+                android:textColor="@color/white"
+                android:textSize="13dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="400dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="❂ Get container IP address"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/gold"
+                android:textStyle="bold"
+                android:textSize="16dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV48"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="$ docker inspect '{{.NetworkSettings.IPAddress}}'[container ID]"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="400dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="❂ Login into container"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/gold"
+                android:textStyle="bold"
+                android:textSize="16dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textV49"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="$ docker exec -it[container ID] bash"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <View
+                android:id="@+id/divider13"
+                android:layout_width="400dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textX1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="❂ See the console output of the running container"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/gold"
+                android:textStyle="bold"
+                android:textSize="16dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textX3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="$ docker logs -f [container ID]"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <View
+                android:id="@+id/divider12"
+                android:layout_width="400dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textX2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="❂ Set a hostname to the container"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/gold"
+                android:textStyle="bold"
+                android:textSize="16dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textX4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="$ docker run -dit --hostname=[container hostname] [image name]"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <View
+                android:id="@+id/divider11"
+                android:layout_width="400dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textX6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="❂ Publish a container port to the host"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/gold"
+                android:textStyle="bold"
+                android:textSize="16dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textX7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="$ docker run -dit -p 8000:80 [image name]"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <View
+                android:id="@+id/divider9"
+                android:layout_width="400dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textX8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="❂ Mount the host directory into the new container"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/gold"
+                android:textStyle="bold"
+                android:textSize="16dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textX9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="$ docker run -dit -v [local directory]:[directory inside container][image name]"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <View
+                android:id="@+id/divider8"
+                android:layout_width="400dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textX12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="❂ Saved the modified container"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/gold"
+                android:textStyle="bold"
+                android:textSize="16dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textX13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="$ docker commit [container ID][new image name]:[tag]"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <View
+                android:id="@+id/divider7"
+                android:layout_width="400dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textX14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="❂ Check the size of each image layer"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/gold"
+                android:textStyle="bold"
+                android:textSize="16dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textX15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="$ docker history [image ID]"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+            <View
+                android:id="@+id/divider6"
+                android:layout_width="400dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textX18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="❂ Start a stopped container"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/gold"
+                android:textStyle="bold"
+                android:textSize="16dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textX19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="$ docker start [container ID]"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

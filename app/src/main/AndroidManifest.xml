@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dockerPath">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.dockerPath.About"
+            android:parentActivityName="com.example.dockerPath.Dashborad"/>
+
+        <activity
+            android:name="com.example.dockerPath.FullscreenImageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_fullscreen"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name="com.example.dockerPath.Usefulinks"
+            android:parentActivityName="com.example.dockerPath.Dashborad" />
+        <activity
+            android:name="com.example.dockerPath.Tipstricks"
+            android:parentActivityName="com.example.dockerPath.Education" />
+        <activity
+            android:name="com.example.dockerPath.Dockertools"
+            android:parentActivityName="com.example.dockerPath.Education" />
+        <activity
+            android:name="com.example.dockerPath.DockerFile"
+            android:parentActivityName="com.example.dockerPath.Education" />
+        <activity
+            android:name="com.example.dockerPath.Hubregistry"
+            android:parentActivityName="com.example.dockerPath.Education" />
+        <activity
+            android:name="com.example.dockerPath.Introducing"
+            android:parentActivityName="com.example.dockerPath.Dashborad" />
+        <activity
+            android:name="com.example.dockerPath.ContainersImages"
+            android:parentActivityName="com.example.dockerPath.Education" />
+        <activity
+            android:name="com.example.dockerPath.Installation"
+            android:parentActivityName="com.example.dockerPath.Education" />
+        <activity
+            android:name="com.example.dockerPath.Education"
+            android:parentActivityName="com.example.dockerPath.Dashborad" />
+        <activity android:name="com.example.dockerPath.Dashborad"/>
+        <activity
+            android:name="com.example.dockerPath.Signup"
+            android:parentActivityName="com.example.dockerPath.MainActivity" />
+        <activity android:name="com.example.dockerPath.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

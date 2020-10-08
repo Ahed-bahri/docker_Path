@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="sky">#1977C1</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#b6b6b6</color>
+    <color name="pistache">#548236</color>
+    <color name="rouge">#FF0000</color>
+    <color name="ciel">#26c4ec</color>
+    <color name="gold">#DAA520</color>
+    <color name="pink">#FF1493</color>
+    <color name="orange">#FF6347</color>
+
+    <color name="black_overlay">#66000000</color>
+
+</resources>
