@@ -1,5 +1,8 @@
-# docker_Path
+# docker_Path 📲
 Docker Path is an Education Android App, made for anyone interested in making their first steps with Docker.
+
+🔹 Firebase
+🔹 Java
 
 # Docker App Screenshots
 
